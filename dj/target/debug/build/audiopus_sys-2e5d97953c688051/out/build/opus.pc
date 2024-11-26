@@ -1,0 +1,16 @@
+# Opus codec reference implementation pkg-config file
+
+prefix=C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out
+exec_prefix=C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out
+libdir=C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/lib
+includedir=C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/include
+
+Name: Opus
+Description: Opus IETF audio codec ( build)
+URL: https://opus-codec.org/
+Version: 0
+Requires:
+Conflicts:
+Libs: -LC:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/lib -lopus
+Libs.private: 
+Cflags: -IC:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/include/opus

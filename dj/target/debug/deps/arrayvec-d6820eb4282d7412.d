@@ -1,0 +1,11 @@
+C:\Users\Johan\Desktop\Rust-Discord-Dj-main\dj\target\debug\deps\libarrayvec-d6820eb4282d7412.rmeta: C:\Users\Johan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\arrayvec-0.7.6\src/lib.rs C:\Users\Johan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\arrayvec-0.7.6\src\arrayvec_impl.rs C:\Users\Johan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\arrayvec-0.7.6\src\arrayvec.rs C:\Users\Johan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\arrayvec-0.7.6\src\array_string.rs C:\Users\Johan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\arrayvec-0.7.6\src\char.rs C:\Users\Johan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\arrayvec-0.7.6\src\errors.rs C:\Users\Johan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\arrayvec-0.7.6\src\utils.rs
+
+C:\Users\Johan\Desktop\Rust-Discord-Dj-main\dj\target\debug\deps\arrayvec-d6820eb4282d7412.d: C:\Users\Johan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\arrayvec-0.7.6\src/lib.rs C:\Users\Johan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\arrayvec-0.7.6\src\arrayvec_impl.rs C:\Users\Johan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\arrayvec-0.7.6\src\arrayvec.rs C:\Users\Johan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\arrayvec-0.7.6\src\array_string.rs C:\Users\Johan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\arrayvec-0.7.6\src\char.rs C:\Users\Johan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\arrayvec-0.7.6\src\errors.rs C:\Users\Johan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\arrayvec-0.7.6\src\utils.rs
+
+C:\Users\Johan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\arrayvec-0.7.6\src/lib.rs:
+C:\Users\Johan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\arrayvec-0.7.6\src\arrayvec_impl.rs:
+C:\Users\Johan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\arrayvec-0.7.6\src\arrayvec.rs:
+C:\Users\Johan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\arrayvec-0.7.6\src\array_string.rs:
+C:\Users\Johan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\arrayvec-0.7.6\src\char.rs:
+C:\Users\Johan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\arrayvec-0.7.6\src\errors.rs:
+C:\Users\Johan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\arrayvec-0.7.6\src\utils.rs:

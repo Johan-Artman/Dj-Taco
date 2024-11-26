@@ -1,0 +1,10 @@
+C:\Users\Johan\Desktop\warframe-items\Rust-Discord-Dj\dj\target\debug\deps\libstream_lib-644326867e15fdc4.rmeta: C:\Users\Johan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\stream_lib-0.5.2\src\lib.rs C:\Users\Johan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\stream_lib-0.5.2\src\download_stream.rs C:\Users\Johan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\stream_lib-0.5.2\src\error.rs C:\Users\Johan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\stream_lib-0.5.2\src\hls\mod.rs C:\Users\Johan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\stream_lib-0.5.2\src\hls\named_watch.rs C:\Users\Johan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\stream_lib-0.5.2\src\hls\watch.rs
+
+C:\Users\Johan\Desktop\warframe-items\Rust-Discord-Dj\dj\target\debug\deps\stream_lib-644326867e15fdc4.d: C:\Users\Johan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\stream_lib-0.5.2\src\lib.rs C:\Users\Johan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\stream_lib-0.5.2\src\download_stream.rs C:\Users\Johan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\stream_lib-0.5.2\src\error.rs C:\Users\Johan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\stream_lib-0.5.2\src\hls\mod.rs C:\Users\Johan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\stream_lib-0.5.2\src\hls\named_watch.rs C:\Users\Johan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\stream_lib-0.5.2\src\hls\watch.rs
+
+C:\Users\Johan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\stream_lib-0.5.2\src\lib.rs:
+C:\Users\Johan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\stream_lib-0.5.2\src\download_stream.rs:
+C:\Users\Johan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\stream_lib-0.5.2\src\error.rs:
+C:\Users\Johan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\stream_lib-0.5.2\src\hls\mod.rs:
+C:\Users\Johan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\stream_lib-0.5.2\src\hls\named_watch.rs:
+C:\Users\Johan\.cargo\registry\src\index.crates.io-6f17d22bba15001f\stream_lib-0.5.2\src\hls\watch.rs:

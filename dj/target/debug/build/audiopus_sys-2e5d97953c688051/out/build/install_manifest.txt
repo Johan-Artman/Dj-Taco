@@ -1,0 +1,11 @@
+C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/lib/opus.lib
+C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/include/opus/opus.h
+C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/include/opus/opus_defines.h
+C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/include/opus/opus_multistream.h
+C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/include/opus/opus_projection.h
+C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/include/opus/opus_types.h
+C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/lib/pkgconfig/opus.pc
+C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/lib/cmake/Opus/OpusTargets.cmake
+C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/lib/cmake/Opus/OpusTargets-debug.cmake
+C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/lib/cmake/Opus/OpusConfig.cmake
+C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/lib/cmake/Opus/OpusConfigVersion.cmake

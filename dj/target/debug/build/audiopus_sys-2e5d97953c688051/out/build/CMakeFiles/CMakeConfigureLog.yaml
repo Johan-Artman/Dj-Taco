@@ -1,0 +1,922 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      The system is: Windows - 10.0.19045 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: -nologo;-MD;-Brepro
+      Id flags:  
+      
+      The output was:
+      0
+      Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+      Copyright (C) Microsoft Corporation. All rights reserved.
+      
+      Build started 2024-09-29 20:12:17.
+      Project "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\3.30.3\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Creating directory "Debug\\CompilerIdC.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+      ClCompile:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc142.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\3.30.3\\CompilerIdC\\CompilerIdC.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+      Done Building Project "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\3.30.3\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:01.37
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/3.30.3/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-1sqscn"
+      binary: "C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-1sqscn"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -nologo -MD -Brepro"
+      CMAKE_MODULE_PATH: "C:/Users/Johan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/audiopus_sys-0.2.2/opus/cmake"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-1sqscn'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_0d453.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2024-09-29 20:12:18.
+        Project "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1sqscn\\cmTC_0d453.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_0d453.dir\\Debug\\".
+          Creating directory "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1sqscn\\Debug\\".
+          Creating directory "cmTC_0d453.dir\\Debug\\cmTC_0d453.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_0d453.dir\\Debug\\cmTC_0d453.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0d453.dir\\Debug\\\\" /Fd"cmTC_0d453.dir\\Debug\\vc142.pdb" /external:W1 /Gd /TC /errorReport:queue  -Brepro "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
+          CMakeCCompilerABI.c
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1sqscn\\Debug\\cmTC_0d453.exe" /INCREMENTAL /ILK:"cmTC_0d453.dir\\Debug\\cmTC_0d453.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-1sqscn/Debug/cmTC_0d453.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-1sqscn/Debug/cmTC_0d453.lib" /MACHINE:X64  /machine:x64 cmTC_0d453.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_0d453.vcxproj -> C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1sqscn\\Debug\\cmTC_0d453.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_0d453.dir\\Debug\\cmTC_0d453.tlog\\unsuccessfulbuild".
+          Touching "cmTC_0d453.dir\\Debug\\cmTC_0d453.tlog\\cmTC_0d453.lastbuildstate".
+        Done Building Project "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1sqscn\\cmTC_0d453.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.96
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'C': C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Running the C compiler's linker: "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.29.30154.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "cmake/OpusConfig.cmake:19 (check_library_exists)"
+      - "CMakeLists.txt:11 (include)"
+    checks:
+      - "Looking for floor in m"
+    directories:
+      source: "C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-dvlp9n"
+      binary: "C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-dvlp9n"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -nologo -MD -Brepro"
+      CMAKE_MODULE_PATH: "C:/Users/Johan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/audiopus_sys-0.2.2/opus/cmake"
+    buildResult:
+      variable: "HAVE_LIBM"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-dvlp9n'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_537eb.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2024-09-29 20:12:20.
+        Project "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dvlp9n\\cmTC_537eb.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_537eb.dir\\Debug\\".
+          Creating directory "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dvlp9n\\Debug\\".
+          Creating directory "cmTC_537eb.dir\\Debug\\cmTC_537eb.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_537eb.dir\\Debug\\cmTC_537eb.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D CHECK_FUNCTION_EXISTS=floor /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_537eb.dir\\Debug\\\\" /Fd"cmTC_537eb.dir\\Debug\\vc142.pdb" /external:W1 /Gd /TC /errorReport:queue  -Brepro "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dvlp9n\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dvlp9n\\Debug\\cmTC_537eb.exe" /INCREMENTAL /ILK:"cmTC_537eb.dir\\Debug\\cmTC_537eb.ilk" /NOLOGO m.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-dvlp9n/Debug/cmTC_537eb.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-dvlp9n/Debug/cmTC_537eb.lib" /MACHINE:X64  /machine:x64 cmTC_537eb.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'm.lib' [C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dvlp9n\\cmTC_537eb.vcxproj]
+        Done Building Project "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dvlp9n\\cmTC_537eb.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dvlp9n\\cmTC_537eb.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'm.lib' [C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dvlp9n\\cmTC_537eb.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.42
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "cmake/CFeatureCheck.cmake:30 (try_compile)"
+      - "cmake/OpusConfig.cmake:25 (c_feature_check)"
+      - "CMakeLists.txt:11 (include)"
+    directories:
+      source: "C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -nologo -MD -Brepro"
+      CMAKE_MODULE_PATH: "C:/Users/Johan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/audiopus_sys-0.2.2/opus/cmake"
+    buildResult:
+      variable: "COMPILE_VLA_SUPPORTED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_26397.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2024-09-29 20:12:21.
+        Project "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeTmp\\cmTC_26397.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_26397.dir\\Debug\\".
+          Creating directory "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeTmp\\Debug\\".
+          Creating directory "cmTC_26397.dir\\Debug\\cmTC_26397.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_26397.dir\\Debug\\cmTC_26397.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_26397.dir\\Debug\\\\" /Fd"cmTC_26397.dir\\Debug\\vc142.pdb" /external:W1 /Gd /TC /errorReport:queue  -Brepro "C:\\Users\\Johan\\.cargo\\registry\\src\\index.crates.io-6f17d22bba15001f\\audiopus_sys-0.2.2\\opus\\cmake\\vla.c"
+          vla.c
+        C:\\Users\\Johan\\.cargo\\registry\\src\\index.crates.io-6f17d22bba15001f\\audiopus_sys-0.2.2\\opus\\cmake\\vla.c(3,15): error C2057: expected constant expression [C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeTmp\\cmTC_26397.vcxproj]
+        C:\\Users\\Johan\\.cargo\\registry\\src\\index.crates.io-6f17d22bba15001f\\audiopus_sys-0.2.2\\opus\\cmake\\vla.c(3,15): error C2466: cannot allocate an array of constant size 0 [C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeTmp\\cmTC_26397.vcxproj]
+        C:\\Users\\Johan\\.cargo\\registry\\src\\index.crates.io-6f17d22bba15001f\\audiopus_sys-0.2.2\\opus\\cmake\\vla.c(3,16): error C2133: 'a': unknown size [C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeTmp\\cmTC_26397.vcxproj]
+        C:\\Users\\Johan\\.cargo\\registry\\src\\index.crates.io-6f17d22bba15001f\\audiopus_sys-0.2.2\\opus\\cmake\\vla.c(4,16): warning C4034: sizeof returns 0 [C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeTmp\\cmTC_26397.vcxproj]
+        Done Building Project "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeTmp\\cmTC_26397.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeTmp\\cmTC_26397.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\Johan\\.cargo\\registry\\src\\index.crates.io-6f17d22bba15001f\\audiopus_sys-0.2.2\\opus\\cmake\\vla.c(4,16): warning C4034: sizeof returns 0 [C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeTmp\\cmTC_26397.vcxproj]
+        
+        
+        "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeTmp\\cmTC_26397.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\Johan\\.cargo\\registry\\src\\index.crates.io-6f17d22bba15001f\\audiopus_sys-0.2.2\\opus\\cmake\\vla.c(3,15): error C2057: expected constant expression [C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeTmp\\cmTC_26397.vcxproj]
+          C:\\Users\\Johan\\.cargo\\registry\\src\\index.crates.io-6f17d22bba15001f\\audiopus_sys-0.2.2\\opus\\cmake\\vla.c(3,15): error C2466: cannot allocate an array of constant size 0 [C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeTmp\\cmTC_26397.vcxproj]
+          C:\\Users\\Johan\\.cargo\\registry\\src\\index.crates.io-6f17d22bba15001f\\audiopus_sys-0.2.2\\opus\\cmake\\vla.c(3,16): error C2133: 'a': unknown size [C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeTmp\\cmTC_26397.vcxproj]
+        
+            1 Warning(s)
+            3 Error(s)
+        
+        Time Elapsed 00:00:00.65
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "cmake/OpusConfig.cmake:28 (check_include_file)"
+      - "CMakeLists.txt:11 (include)"
+    checks:
+      - "Looking for alloca.h"
+    directories:
+      source: "C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-77eprt"
+      binary: "C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-77eprt"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -nologo -MD -Brepro"
+      CMAKE_MODULE_PATH: "C:/Users/Johan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/audiopus_sys-0.2.2/opus/cmake"
+    buildResult:
+      variable: "HAVE_ALLOCA_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-77eprt'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_58a34.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2024-09-29 20:12:22.
+        Project "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-77eprt\\cmTC_58a34.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_58a34.dir\\Debug\\".
+          Creating directory "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-77eprt\\Debug\\".
+          Creating directory "cmTC_58a34.dir\\Debug\\cmTC_58a34.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_58a34.dir\\Debug\\cmTC_58a34.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_58a34.dir\\Debug\\\\" /Fd"cmTC_58a34.dir\\Debug\\vc142.pdb" /external:W1 /Gd /TC /errorReport:queue  -Brepro "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-77eprt\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-77eprt\\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'alloca.h': No such file or directory [C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-77eprt\\cmTC_58a34.vcxproj]
+        Done Building Project "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-77eprt\\cmTC_58a34.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-77eprt\\cmTC_58a34.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-77eprt\\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'alloca.h': No such file or directory [C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-77eprt\\cmTC_58a34.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.61
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckSymbolExists.cmake:154 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "cmake/OpusConfig.cmake:35 (check_symbol_exists)"
+      - "CMakeLists.txt:11 (include)"
+    checks:
+      - "Looking for alloca"
+    directories:
+      source: "C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-lv6z1e"
+      binary: "C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-lv6z1e"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -nologo -MD -Brepro"
+      CMAKE_MODULE_PATH: "C:/Users/Johan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/audiopus_sys-0.2.2/opus/cmake"
+    buildResult:
+      variable: "USE_ALLOCA_SUPPORTED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-lv6z1e'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_b819e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2024-09-29 20:12:23.
+        Project "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lv6z1e\\cmTC_b819e.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_b819e.dir\\Debug\\".
+          Creating directory "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lv6z1e\\Debug\\".
+          Creating directory "cmTC_b819e.dir\\Debug\\cmTC_b819e.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_b819e.dir\\Debug\\cmTC_b819e.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b819e.dir\\Debug\\\\" /Fd"cmTC_b819e.dir\\Debug\\vc142.pdb" /external:W1 /Gd /TC /errorReport:queue  -Brepro "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lv6z1e\\CheckSymbolExists.c"
+          CheckSymbolExists.c
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lv6z1e\\Debug\\cmTC_b819e.exe" /INCREMENTAL /ILK:"cmTC_b819e.dir\\Debug\\cmTC_b819e.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-lv6z1e/Debug/cmTC_b819e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-lv6z1e/Debug/cmTC_b819e.lib" /MACHINE:X64  /machine:x64 cmTC_b819e.dir\\Debug\\CheckSymbolExists.obj
+          cmTC_b819e.vcxproj -> C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lv6z1e\\Debug\\cmTC_b819e.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_b819e.dir\\Debug\\cmTC_b819e.tlog\\unsuccessfulbuild".
+          Touching "cmTC_b819e.dir\\Debug\\cmTC_b819e.tlog\\cmTC_b819e.lastbuildstate".
+        Done Building Project "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lv6z1e\\cmTC_b819e.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:02.08
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "cmake/OpusConfig.cmake:39 (check_function_exists)"
+      - "CMakeLists.txt:11 (include)"
+    checks:
+      - "Looking for lrintf"
+    directories:
+      source: "C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-4mfddr"
+      binary: "C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-4mfddr"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -nologo -MD -Brepro"
+      CMAKE_MODULE_PATH: "C:/Users/Johan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/audiopus_sys-0.2.2/opus/cmake"
+    buildResult:
+      variable: "HAVE_LRINTF"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-4mfddr'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_73612.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2024-09-29 20:12:26.
+        Project "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4mfddr\\cmTC_73612.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_73612.dir\\Debug\\".
+          Creating directory "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4mfddr\\Debug\\".
+          Creating directory "cmTC_73612.dir\\Debug\\cmTC_73612.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_73612.dir\\Debug\\cmTC_73612.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D CHECK_FUNCTION_EXISTS=lrintf /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_73612.dir\\Debug\\\\" /Fd"cmTC_73612.dir\\Debug\\vc142.pdb" /external:W1 /Gd /TC /errorReport:queue  -Brepro "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4mfddr\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4mfddr\\Debug\\cmTC_73612.exe" /INCREMENTAL /ILK:"cmTC_73612.dir\\Debug\\cmTC_73612.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-4mfddr/Debug/cmTC_73612.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-4mfddr/Debug/cmTC_73612.lib" /MACHINE:X64  /machine:x64 cmTC_73612.dir\\Debug\\CheckFunctionExists.obj
+          cmTC_73612.vcxproj -> C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4mfddr\\Debug\\cmTC_73612.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_73612.dir\\Debug\\cmTC_73612.tlog\\unsuccessfulbuild".
+          Touching "cmTC_73612.dir\\Debug\\cmTC_73612.tlog\\cmTC_73612.lastbuildstate".
+        Done Building Project "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4mfddr\\cmTC_73612.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.08
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "cmake/OpusConfig.cmake:40 (check_function_exists)"
+      - "CMakeLists.txt:11 (include)"
+    checks:
+      - "Looking for lrint"
+    directories:
+      source: "C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-vgpthr"
+      binary: "C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-vgpthr"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -nologo -MD -Brepro"
+      CMAKE_MODULE_PATH: "C:/Users/Johan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/audiopus_sys-0.2.2/opus/cmake"
+    buildResult:
+      variable: "HAVE_LRINT"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-vgpthr'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_6a386.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2024-09-29 20:12:27.
+        Project "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vgpthr\\cmTC_6a386.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_6a386.dir\\Debug\\".
+          Creating directory "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vgpthr\\Debug\\".
+          Creating directory "cmTC_6a386.dir\\Debug\\cmTC_6a386.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_6a386.dir\\Debug\\cmTC_6a386.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D CHECK_FUNCTION_EXISTS=lrint /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6a386.dir\\Debug\\\\" /Fd"cmTC_6a386.dir\\Debug\\vc142.pdb" /external:W1 /Gd /TC /errorReport:queue  -Brepro "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vgpthr\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vgpthr\\Debug\\cmTC_6a386.exe" /INCREMENTAL /ILK:"cmTC_6a386.dir\\Debug\\cmTC_6a386.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-vgpthr/Debug/cmTC_6a386.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-vgpthr/Debug/cmTC_6a386.lib" /MACHINE:X64  /machine:x64 cmTC_6a386.dir\\Debug\\CheckFunctionExists.obj
+          cmTC_6a386.vcxproj -> C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vgpthr\\Debug\\cmTC_6a386.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_6a386.dir\\Debug\\cmTC_6a386.tlog\\unsuccessfulbuild".
+          Touching "cmTC_6a386.dir\\Debug\\cmTC_6a386.tlog\\cmTC_6a386.lastbuildstate".
+        Done Building Project "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vgpthr\\cmTC_6a386.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.00
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "cmake/OpusFunctions.cmake:146 (check_include_file)"
+      - "cmake/OpusConfig.cmake:53 (opus_supports_cpu_detection)"
+      - "CMakeLists.txt:11 (include)"
+    checks:
+      - "Looking for intrin.h"
+    directories:
+      source: "C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-a9lth4"
+      binary: "C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-a9lth4"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -nologo -MD -Brepro"
+      CMAKE_MODULE_PATH: "C:/Users/Johan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/audiopus_sys-0.2.2/opus/cmake"
+    buildResult:
+      variable: "HAVE_INTRIN_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-a9lth4'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_10392.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2024-09-29 20:12:28.
+        Project "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a9lth4\\cmTC_10392.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_10392.dir\\Debug\\".
+          Creating directory "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a9lth4\\Debug\\".
+          Creating directory "cmTC_10392.dir\\Debug\\cmTC_10392.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_10392.dir\\Debug\\cmTC_10392.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_10392.dir\\Debug\\\\" /Fd"cmTC_10392.dir\\Debug\\vc142.pdb" /external:W1 /Gd /TC /errorReport:queue  -Brepro "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a9lth4\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a9lth4\\Debug\\cmTC_10392.exe" /INCREMENTAL /ILK:"cmTC_10392.dir\\Debug\\cmTC_10392.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-a9lth4/Debug/cmTC_10392.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-a9lth4/Debug/cmTC_10392.lib" /MACHINE:X64  /machine:x64 cmTC_10392.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_10392.vcxproj -> C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a9lth4\\Debug\\cmTC_10392.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_10392.dir\\Debug\\cmTC_10392.tlog\\unsuccessfulbuild".
+          Touching "cmTC_10392.dir\\Debug\\cmTC_10392.tlog\\cmTC_10392.lastbuildstate".
+        Done Building Project "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a9lth4\\cmTC_10392.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.04
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "cmake/OpusFunctions.cmake:56 (check_include_file)"
+      - "cmake/OpusConfig.cmake:57 (opus_detect_sse)"
+      - "CMakeLists.txt:11 (include)"
+    checks:
+      - "Looking for xmmintrin.h"
+    directories:
+      source: "C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-so6yb1"
+      binary: "C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-so6yb1"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -nologo -MD -Brepro"
+      CMAKE_MODULE_PATH: "C:/Users/Johan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/audiopus_sys-0.2.2/opus/cmake"
+    buildResult:
+      variable: "HAVE_XMMINTRIN_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-so6yb1'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_378bd.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2024-09-29 20:12:30.
+        Project "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-so6yb1\\cmTC_378bd.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_378bd.dir\\Debug\\".
+          Creating directory "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-so6yb1\\Debug\\".
+          Creating directory "cmTC_378bd.dir\\Debug\\cmTC_378bd.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_378bd.dir\\Debug\\cmTC_378bd.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_378bd.dir\\Debug\\\\" /Fd"cmTC_378bd.dir\\Debug\\vc142.pdb" /external:W1 /Gd /TC /errorReport:queue  -Brepro "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-so6yb1\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-so6yb1\\Debug\\cmTC_378bd.exe" /INCREMENTAL /ILK:"cmTC_378bd.dir\\Debug\\cmTC_378bd.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-so6yb1/Debug/cmTC_378bd.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-so6yb1/Debug/cmTC_378bd.lib" /MACHINE:X64  /machine:x64 cmTC_378bd.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_378bd.vcxproj -> C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-so6yb1\\Debug\\cmTC_378bd.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_378bd.dir\\Debug\\cmTC_378bd.tlog\\unsuccessfulbuild".
+          Touching "cmTC_378bd.dir\\Debug\\cmTC_378bd.tlog\\cmTC_378bd.lastbuildstate".
+        Done Building Project "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-so6yb1\\cmTC_378bd.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.19
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "cmake/OpusFunctions.cmake:76 (check_include_file)"
+      - "cmake/OpusConfig.cmake:57 (opus_detect_sse)"
+      - "CMakeLists.txt:11 (include)"
+    checks:
+      - "Looking for emmintrin.h"
+    directories:
+      source: "C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-pfvkrc"
+      binary: "C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-pfvkrc"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -nologo -MD -Brepro"
+      CMAKE_MODULE_PATH: "C:/Users/Johan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/audiopus_sys-0.2.2/opus/cmake"
+    buildResult:
+      variable: "HAVE_EMMINTRIN_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-pfvkrc'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_78d20.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2024-09-29 20:12:31.
+        Project "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pfvkrc\\cmTC_78d20.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_78d20.dir\\Debug\\".
+          Creating directory "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pfvkrc\\Debug\\".
+          Creating directory "cmTC_78d20.dir\\Debug\\cmTC_78d20.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_78d20.dir\\Debug\\cmTC_78d20.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_78d20.dir\\Debug\\\\" /Fd"cmTC_78d20.dir\\Debug\\vc142.pdb" /external:W1 /Gd /TC /errorReport:queue  -Brepro "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pfvkrc\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pfvkrc\\Debug\\cmTC_78d20.exe" /INCREMENTAL /ILK:"cmTC_78d20.dir\\Debug\\cmTC_78d20.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-pfvkrc/Debug/cmTC_78d20.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-pfvkrc/Debug/cmTC_78d20.lib" /MACHINE:X64  /machine:x64 cmTC_78d20.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_78d20.vcxproj -> C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pfvkrc\\Debug\\cmTC_78d20.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_78d20.dir\\Debug\\cmTC_78d20.tlog\\unsuccessfulbuild".
+          Touching "cmTC_78d20.dir\\Debug\\cmTC_78d20.tlog\\cmTC_78d20.lastbuildstate".
+        Done Building Project "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pfvkrc\\cmTC_78d20.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.99
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "cmake/OpusFunctions.cmake:95 (check_include_file)"
+      - "cmake/OpusConfig.cmake:57 (opus_detect_sse)"
+      - "CMakeLists.txt:11 (include)"
+    checks:
+      - "Looking for smmintrin.h"
+    directories:
+      source: "C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-k4o3mt"
+      binary: "C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-k4o3mt"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -nologo -MD -Brepro"
+      CMAKE_MODULE_PATH: "C:/Users/Johan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/audiopus_sys-0.2.2/opus/cmake"
+    buildResult:
+      variable: "HAVE_SMMINTRIN_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-k4o3mt'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_0f10b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2024-09-29 20:12:32.
+        Project "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k4o3mt\\cmTC_0f10b.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_0f10b.dir\\Debug\\".
+          Creating directory "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k4o3mt\\Debug\\".
+          Creating directory "cmTC_0f10b.dir\\Debug\\cmTC_0f10b.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_0f10b.dir\\Debug\\cmTC_0f10b.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0f10b.dir\\Debug\\\\" /Fd"cmTC_0f10b.dir\\Debug\\vc142.pdb" /external:W1 /Gd /TC /errorReport:queue  -Brepro "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k4o3mt\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k4o3mt\\Debug\\cmTC_0f10b.exe" /INCREMENTAL /ILK:"cmTC_0f10b.dir\\Debug\\cmTC_0f10b.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-k4o3mt/Debug/cmTC_0f10b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-k4o3mt/Debug/cmTC_0f10b.lib" /MACHINE:X64  /machine:x64 cmTC_0f10b.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_0f10b.vcxproj -> C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k4o3mt\\Debug\\cmTC_0f10b.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_0f10b.dir\\Debug\\cmTC_0f10b.tlog\\unsuccessfulbuild".
+          Touching "cmTC_0f10b.dir\\Debug\\cmTC_0f10b.tlog\\cmTC_0f10b.lastbuildstate".
+        Done Building Project "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k4o3mt\\cmTC_0f10b.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.00
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "cmake/OpusFunctions.cmake:114 (check_include_file)"
+      - "cmake/OpusConfig.cmake:57 (opus_detect_sse)"
+      - "CMakeLists.txt:11 (include)"
+    checks:
+      - "Looking for immintrin.h"
+    directories:
+      source: "C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-8xdqnz"
+      binary: "C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-8xdqnz"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -nologo -MD -Brepro"
+      CMAKE_MODULE_PATH: "C:/Users/Johan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/audiopus_sys-0.2.2/opus/cmake"
+    buildResult:
+      variable: "HAVE_IMMINTRIN_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-8xdqnz'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_4a67d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2024-09-29 20:12:34.
+        Project "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8xdqnz\\cmTC_4a67d.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_4a67d.dir\\Debug\\".
+          Creating directory "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8xdqnz\\Debug\\".
+          Creating directory "cmTC_4a67d.dir\\Debug\\cmTC_4a67d.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_4a67d.dir\\Debug\\cmTC_4a67d.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4a67d.dir\\Debug\\\\" /Fd"cmTC_4a67d.dir\\Debug\\vc142.pdb" /external:W1 /Gd /TC /errorReport:queue  -Brepro "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8xdqnz\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8xdqnz\\Debug\\cmTC_4a67d.exe" /INCREMENTAL /ILK:"cmTC_4a67d.dir\\Debug\\cmTC_4a67d.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-8xdqnz/Debug/cmTC_4a67d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-8xdqnz/Debug/cmTC_4a67d.lib" /MACHINE:X64  /machine:x64 cmTC_4a67d.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_4a67d.vcxproj -> C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8xdqnz\\Debug\\cmTC_4a67d.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_4a67d.dir\\Debug\\cmTC_4a67d.tlog\\unsuccessfulbuild".
+          Touching "cmTC_4a67d.dir\\Debug\\cmTC_4a67d.tlog\\cmTC_4a67d.lastbuildstate".
+        Done Building Project "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8xdqnz\\cmTC_4a67d.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.09
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "cmake/OpusFunctions.cmake:46 (check_c_compiler_flag)"
+      - "cmake/OpusFunctions.cmake:117 (check_flag)"
+      - "cmake/OpusConfig.cmake:57 (opus_detect_sse)"
+      - "CMakeLists.txt:11 (include)"
+    checks:
+      - "Performing Test AVX_SUPPORTED"
+    directories:
+      source: "C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-vt8f7e"
+      binary: "C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-vt8f7e"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -nologo -MD -Brepro"
+      CMAKE_MODULE_PATH: "C:/Users/Johan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/audiopus_sys-0.2.2/opus/cmake"
+    buildResult:
+      variable: "AVX_SUPPORTED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-vt8f7e'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_a772d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2024-09-29 20:12:35.
+        Project "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vt8f7e\\cmTC_a772d.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_a772d.dir\\Debug\\".
+          Creating directory "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vt8f7e\\Debug\\".
+          Creating directory "cmTC_a772d.dir\\Debug\\cmTC_a772d.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_a772d.dir\\Debug\\cmTC_a772d.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D AVX_SUPPORTED /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /arch:AVX /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a772d.dir\\Debug\\\\" /Fd"cmTC_a772d.dir\\Debug\\vc142.pdb" /external:W1 /Gd /TC /errorReport:queue  -Brepro "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vt8f7e\\src.c"
+          src.c
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vt8f7e\\Debug\\cmTC_a772d.exe" /INCREMENTAL /ILK:"cmTC_a772d.dir\\Debug\\cmTC_a772d.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-vt8f7e/Debug/cmTC_a772d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-vt8f7e/Debug/cmTC_a772d.lib" /MACHINE:X64  /machine:x64 cmTC_a772d.dir\\Debug\\src.obj
+          cmTC_a772d.vcxproj -> C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vt8f7e\\Debug\\cmTC_a772d.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_a772d.dir\\Debug\\cmTC_a772d.tlog\\unsuccessfulbuild".
+          Touching "cmTC_a772d.dir\\Debug\\cmTC_a772d.tlog\\cmTC_a772d.lastbuildstate".
+        Done Building Project "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vt8f7e\\cmTC_a772d.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.00
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "cmake/OpusFunctions.cmake:46 (check_c_compiler_flag)"
+      - "cmake/OpusConfig.cmake:73 (check_flag)"
+      - "CMakeLists.txt:11 (include)"
+    checks:
+      - "Performing Test FAST_MATH_SUPPORTED"
+    directories:
+      source: "C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-kyp13r"
+      binary: "C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-kyp13r"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -nologo -MD -Brepro"
+      CMAKE_MODULE_PATH: "C:/Users/Johan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/audiopus_sys-0.2.2/opus/cmake"
+    buildResult:
+      variable: "FAST_MATH_SUPPORTED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-kyp13r'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_337e5.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2024-09-29 20:12:36.
+        Project "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kyp13r\\cmTC_337e5.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_337e5.dir\\Debug\\".
+          Creating directory "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kyp13r\\Debug\\".
+          Creating directory "cmTC_337e5.dir\\Debug\\cmTC_337e5.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_337e5.dir\\Debug\\cmTC_337e5.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D FAST_MATH_SUPPORTED /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:fast /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_337e5.dir\\Debug\\\\" /Fd"cmTC_337e5.dir\\Debug\\vc142.pdb" /external:W1 /Gd /TC /errorReport:queue  -Brepro "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kyp13r\\src.c"
+          src.c
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kyp13r\\Debug\\cmTC_337e5.exe" /INCREMENTAL /ILK:"cmTC_337e5.dir\\Debug\\cmTC_337e5.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-kyp13r/Debug/cmTC_337e5.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-kyp13r/Debug/cmTC_337e5.lib" /MACHINE:X64  /machine:x64 cmTC_337e5.dir\\Debug\\src.obj
+          cmTC_337e5.vcxproj -> C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kyp13r\\Debug\\cmTC_337e5.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_337e5.dir\\Debug\\cmTC_337e5.tlog\\unsuccessfulbuild".
+          Touching "cmTC_337e5.dir\\Debug\\cmTC_337e5.tlog\\cmTC_337e5.lastbuildstate".
+        Done Building Project "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kyp13r\\cmTC_337e5.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.05
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "cmake/OpusFunctions.cmake:46 (check_c_compiler_flag)"
+      - "cmake/OpusConfig.cmake:74 (check_flag)"
+      - "CMakeLists.txt:11 (include)"
+    checks:
+      - "Performing Test STACK_PROTECTOR_SUPPORTED"
+    directories:
+      source: "C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-jgsrpl"
+      binary: "C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-jgsrpl"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -nologo -MD -Brepro"
+      CMAKE_MODULE_PATH: "C:/Users/Johan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/audiopus_sys-0.2.2/opus/cmake"
+    buildResult:
+      variable: "STACK_PROTECTOR_SUPPORTED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-jgsrpl'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_12fa6.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2024-09-29 20:12:38.
+        Project "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jgsrpl\\cmTC_12fa6.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_12fa6.dir\\Debug\\".
+          Creating directory "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jgsrpl\\Debug\\".
+          Creating directory "cmTC_12fa6.dir\\Debug\\cmTC_12fa6.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_12fa6.dir\\Debug\\cmTC_12fa6.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D STACK_PROTECTOR_SUPPORTED /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_12fa6.dir\\Debug\\\\" /Fd"cmTC_12fa6.dir\\Debug\\vc142.pdb" /external:W1 /Gd /TC /errorReport:queue  -Brepro "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jgsrpl\\src.c"
+          src.c
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jgsrpl\\Debug\\cmTC_12fa6.exe" /INCREMENTAL /ILK:"cmTC_12fa6.dir\\Debug\\cmTC_12fa6.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-jgsrpl/Debug/cmTC_12fa6.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-jgsrpl/Debug/cmTC_12fa6.lib" /MACHINE:X64  /machine:x64 cmTC_12fa6.dir\\Debug\\src.obj
+          cmTC_12fa6.vcxproj -> C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jgsrpl\\Debug\\cmTC_12fa6.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_12fa6.dir\\Debug\\cmTC_12fa6.tlog\\unsuccessfulbuild".
+          Touching "cmTC_12fa6.dir\\Debug\\cmTC_12fa6.tlog\\cmTC_12fa6.lastbuildstate".
+        Done Building Project "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jgsrpl\\cmTC_12fa6.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.04
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "cmake/OpusFunctions.cmake:46 (check_c_compiler_flag)"
+      - "cmake/OpusConfig.cmake:75 (check_flag)"
+      - "CMakeLists.txt:11 (include)"
+    checks:
+      - "Performing Test STACK_PROTECTOR_DISABLED_SUPPORTED"
+    directories:
+      source: "C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-z66axm"
+      binary: "C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-z66axm"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -nologo -MD -Brepro"
+      CMAKE_MODULE_PATH: "C:/Users/Johan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/audiopus_sys-0.2.2/opus/cmake"
+    buildResult:
+      variable: "STACK_PROTECTOR_DISABLED_SUPPORTED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-z66axm'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_24deb.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2024-09-29 20:12:39.
+        Project "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z66axm\\cmTC_24deb.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_24deb.dir\\Debug\\".
+          Creating directory "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z66axm\\Debug\\".
+          Creating directory "cmTC_24deb.dir\\Debug\\cmTC_24deb.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_24deb.dir\\Debug\\cmTC_24deb.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D STACK_PROTECTOR_DISABLED_SUPPORTED /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS- /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_24deb.dir\\Debug\\\\" /Fd"cmTC_24deb.dir\\Debug\\vc142.pdb" /external:W1 /Gd /TC /errorReport:queue  -Brepro "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z66axm\\src.c"
+          src.c
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z66axm\\Debug\\cmTC_24deb.exe" /INCREMENTAL /ILK:"cmTC_24deb.dir\\Debug\\cmTC_24deb.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-z66axm/Debug/cmTC_24deb.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/CMakeFiles/CMakeScratch/TryCompile-z66axm/Debug/cmTC_24deb.lib" /MACHINE:X64  /machine:x64 cmTC_24deb.dir\\Debug\\src.obj
+          cmTC_24deb.vcxproj -> C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z66axm\\Debug\\cmTC_24deb.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_24deb.dir\\Debug\\cmTC_24deb.tlog\\unsuccessfulbuild".
+          Touching "cmTC_24deb.dir\\Debug\\cmTC_24deb.tlog\\cmTC_24deb.lastbuildstate".
+        Done Building Project "C:\\Users\\Johan\\Desktop\\warframe-items\\Rust-Discord-Dj\\dj\\target\\debug\\build\\audiopus_sys-2e5d97953c688051\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z66axm\\cmTC_24deb.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.02
+        
+      exitCode: 0
+...

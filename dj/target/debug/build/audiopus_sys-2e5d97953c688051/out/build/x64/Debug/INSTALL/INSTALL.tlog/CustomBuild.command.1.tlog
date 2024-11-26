@@ -1,0 +1,10 @@
+^C:\USERS\JOHAN\DESKTOP\WARFRAME-ITEMS\RUST-DISCORD-DJ\DJ\TARGET\DEBUG\BUILD\AUDIOPUS_SYS-2E5D97953C688051\OUT\BUILD\CMAKEFILES\B88F6FC5322F1227E58309260B4FEB26\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

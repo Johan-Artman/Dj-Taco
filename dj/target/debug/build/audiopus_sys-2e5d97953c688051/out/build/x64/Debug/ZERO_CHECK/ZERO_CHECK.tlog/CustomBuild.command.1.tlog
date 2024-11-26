@@ -1,0 +1,10 @@
+^C:\USERS\JOHAN\DESKTOP\WARFRAME-ITEMS\RUST-DISCORD-DJ\DJ\TARGET\DEBUG\BUILD\AUDIOPUS_SYS-2E5D97953C688051\OUT\BUILD\CMAKEFILES\B88F6FC5322F1227E58309260B4FEB26\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Johan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/audiopus_sys-0.2.2/opus -BC:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Johan/Desktop/warframe-items/Rust-Discord-Dj/dj/target/debug/build/audiopus_sys-2e5d97953c688051/out/build/Opus.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
