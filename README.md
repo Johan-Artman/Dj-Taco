@@ -144,29 +144,16 @@ The bot is structured into three main modules:
 - `commands.rs` - All Discord command implementations
 - `music_events.rs` - Event handlers for music playback events
 
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Make your changes
-4. Commit your changes (`git commit -m 'Add some amazing feature'`)
-5. Push to the branch (`git push origin feature/amazing-feature`)
-6. Open a Pull Request
 
 ## Future Improvements
 
 - [ ] Move hardcoded configuration to environment variables
 - [ ] Add support for multiple guilds
 - [ ] Implement playlist support
-- [ ] Add volume control
 - [ ] Implement loop/repeat functionality
 - [ ] Add web dashboard for queue management
 
-## License
 
-This project is open source. Please check the repository for license information.
-
-## Support
 
 If you encounter any issues or have questions, please open an issue in the GitHub repository.
 
