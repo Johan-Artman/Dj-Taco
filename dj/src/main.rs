@@ -5,7 +5,7 @@ extern crate tracing;
 pub mod commands;
 pub mod music_events;
 
-use lavalink_rs::{model::events::{self, Events}, prelude::*};
+use lavalink_rs::{model::events::{self}, prelude::*};
 use poise::serenity_prelude as serenity;
 use songbird::SerenityInit;
 
@@ -15,7 +15,6 @@ use songbird::SerenityInit;
 
 pub struct Data {
     pub lavalink: LavalinkClient,
-    pub guild_id: u64,
 }
 
 pub type Error = Box<dyn std::error::Error + Send + Sync>;
@@ -30,11 +29,20 @@ async fn main() -> Result<(), Error> {
 
     // Get the Discord token from environment variables
     let discord_token = std::env::var("DISCORD_TOKEN").expect("DISCORD_TOKEN is not set");
+    
+    // Get Lavalink configuration from environment variables
+    let lavalink_hostname = std::env::var("LAVALINK_HOSTNAME").unwrap_or_else(|_| "localhost:2333".to_string());
+    let lavalink_password = std::env::var("LAVALINK_PASSWORD").expect("LAVALINK_PASSWORD is not set");
+    let discord_user_id = std::env::var("DISCORD_USER_ID")
+        .expect("DISCORD_USER_ID is not set")
+        .parse::<u64>()
+        .expect("DISCORD_USER_ID must be a valid u64");
 
     // Setup Lavalink framework
     let framework = poise::Framework::builder()
         .options(poise::FrameworkOptions {
             commands: vec![
+                commands::play(),
                 commands::queue(),
                 commands::skip(),
                 commands::pause(),
@@ -51,7 +59,7 @@ async fn main() -> Result<(), Error> {
             },
             ..Default::default()
         })
-        .setup(|ctx, _ready, framework| {
+        .setup(move |ctx, _ready, framework| {
             Box::pin(async move {
                 // Register commands globally (if needed)
                 poise::builtins::register_globally(ctx, &framework.options().commands).await?;
@@ -66,9 +74,9 @@ async fn main() -> Result<(), Error> {
 
                 // Setup Lavalink node configuration
                 let node_builder = NodeBuilder {
-                    hostname: "localhost:2333".to_string(),
-                    password: "PASSWORD HERE".to_string(), // maybe also put lavalink in env?
-                    user_id: UserId("USERID HERE"), //TODO, fetch userid with api instead of manual code
+                    hostname: lavalink_hostname,
+                    password: lavalink_password,
+                    user_id: UserId(discord_user_id),
                     ..Default::default()
                 };
 
@@ -83,11 +91,8 @@ async fn main() -> Result<(), Error> {
                 )
                 .await;
 
-                // Rust is unable to recognize the guild id when in the dotenv????
-                let guild_id: u64 = "GUILD ID HERE";
-
                 // Return the data for Lavalink usage in the bot
-                Ok(Data { lavalink: client, guild_id })
+                Ok(Data { lavalink: client })
             })
         })
         .build();
