@@ -41,26 +41,19 @@ Create a `.env` file in the `dj/` directory with the following variables:
 
 ```env
 DISCORD_TOKEN=your_discord_bot_token_here
+DISCORD_USER_ID=your_bot_user_id_here
+LAVALINK_HOSTNAME=localhost:2333
+LAVALINK_PASSWORD=your_lavalink_password_here
 ```
 
 ### Code Configuration
 
-Currently, some configuration values need to be set directly in the code (this will be improved in future versions):
+~~Currently, some configuration values need to be set directly in the code (this will be improved in future versions):~~
 
-1. **Lavalink Configuration** (`src/main.rs`, lines 69-73):
-   ```rust
-   let node_builder = NodeBuilder {
-       hostname: "localhost:2333".to_string(),
-       password: "your_lavalink_password".to_string(),
-       user_id: UserId("your_bot_user_id"),
-       ..Default::default()
-   };
-   ```
+**✅ FIXED**: All configuration values are now set via environment variables! No more hardcoded values.
 
-2. **Guild ID** (`src/main.rs`, line 87):
-   ```rust
-   let guild_id: u64 = 123456789012345678; // Replace with your Discord server ID
-   ```
+~~1. **Lavalink Configuration** (`src/main.rs`, lines 69-73):~~
+~~2. **Guild ID** (`src/main.rs`, line 87):~~
 
 ### Lavalink Setup
 
@@ -103,7 +96,8 @@ cargo run --release
 
 All commands support both slash commands (`/command`) and prefix commands (`,command`):
 
-#### Queue Management
+#### Music Commands
+- `,play <URL or search query>` - Play a song from YouTube or other sources
 - `,queue` - Display the current queue (shows up to 9 tracks)
 - `,clear` - Clear the entire queue
 - `,remove <index>` - Remove a specific song from the queue
@@ -119,6 +113,8 @@ All commands support both slash commands (`/command`) and prefix commands (`,com
 ### Example Usage
 
 ```
+,play never gonna give you up  # Play a song by search
+,play https://youtu.be/dQw4w9WgXcQ  # Play a song by URL
 ,queue                    # Show current queue
 ,skip                     # Skip current song
 ,seek 120                 # Jump to 2 minutes into the song
@@ -147,7 +143,8 @@ The bot is structured into three main modules:
 
 ## Future Improvements
 
-- [ ] Move hardcoded configuration to environment variables
+- [x] ~~Move hardcoded configuration to environment variables~~ ✅ **COMPLETED**
+- [x] ~~Add play command to actually play music~~ ✅ **COMPLETED**
 - [ ] Add support for multiple guilds
 - [ ] Implement playlist support
 - [ ] Implement loop/repeat functionality

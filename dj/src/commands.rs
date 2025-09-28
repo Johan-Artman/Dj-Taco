@@ -3,15 +3,129 @@ use std::time::Duration;
 use crate::{Context, Error};
 use futures::future;
 use futures::stream::StreamExt;
+use lavalink_rs::model::*;
+use lavalink_rs::model::track::{TrackLoadType, TrackLoadData};
 
-/// Add a song to the queue
+/// Play a song from YouTube or other sources
+#[poise::command(slash_command, prefix_command)]
+pub async fn play(
+    ctx: Context<'_>,
+    #[description = "The URL or search query for the song"] query: String,
+) -> Result<(), Error> {
+    let guild_id = ctx.guild_id().ok_or("This command can only be used in a guild")?;
+
+    // Get user's voice channel
+    let channel_id = {
+        let guild = ctx.guild().unwrap();
+        guild
+            .voice_states
+            .get(&ctx.author().id)
+            .and_then(|voice_state| voice_state.channel_id)
+            .ok_or("You must be in a voice channel to use this command")?
+    };
+
+    let lava_client = ctx.data().lavalink.clone();
+    let manager = songbird::get(ctx.serenity_context()).await.unwrap();
+
+    // Join the voice channel
+    let join_result = manager.join_gateway(guild_id, channel_id).await;
+    
+    let connection_info = match join_result {
+        Ok((info, _call)) => info,
+        Err(e) => {
+            ctx.say(format!("Failed to join voice channel: {}", e)).await?;
+            return Ok(());
+        }
+    };
+
+    // Create or get player context
+    let player = if let Some(player) = lava_client.get_player_context(GuildId(guild_id.into())) {
+        player
+    } else {
+        lava_client.create_player_context(GuildId(guild_id.into()), connection_info).await?
+    };
+
+    // Load the track
+    let loaded = lava_client.load_tracks(GuildId(guild_id.into()), &query).await?;
+    
+    match loaded.load_type {
+        TrackLoadType::Track => {
+            if let Some(TrackLoadData::Track(mut track)) = loaded.data {
+                // Set user data for the track
+                track.user_data = Some(serde_json::json!({
+                    "requester_id": ctx.author().id.to_string()
+                }));
+                
+                player.get_queue().push_to_back(track.clone())?;
+                ctx.say(format!("Added to queue: {} - {}", 
+                    track.info.author, 
+                    track.info.title
+                )).await?;
+            } else {
+                ctx.say("No track found").await?;
+            }
+        },
+        TrackLoadType::Playlist => {
+            if let Some(TrackLoadData::Playlist(playlist)) = loaded.data {
+                let mut added_count = 0;
+                for mut track in playlist.tracks {
+                    track.user_data = Some(serde_json::json!({
+                        "requester_id": ctx.author().id.to_string()
+                    }));
+                    
+                    player.get_queue().push_to_back(track)?;
+                    added_count += 1;
+                }
+                ctx.say(format!("Added {} tracks from playlist: {}", 
+                    added_count, 
+                    playlist.info.name
+                )).await?;
+            } else {
+                ctx.say("Failed to load playlist").await?;
+            }
+        },
+        TrackLoadType::Search => {
+            if let Some(TrackLoadData::Search(tracks)) = loaded.data {
+                if let Some(mut track) = tracks.into_iter().next() {
+                    track.user_data = Some(serde_json::json!({
+                        "requester_id": ctx.author().id.to_string()
+                    }));
+                    
+                    player.get_queue().push_to_back(track.clone())?;
+                    ctx.say(format!("Added to queue: {} - {}", 
+                        track.info.author, 
+                        track.info.title
+                    )).await?;
+                } else {
+                    ctx.say("No tracks found for your search").await?;
+                }
+            } else {
+                ctx.say("Search failed").await?;
+            }
+        },
+        TrackLoadType::Empty => {
+            ctx.say("No tracks found or unsupported source").await?;
+        },
+        TrackLoadType::Error => {
+            if let Some(TrackLoadData::Error(error)) = loaded.data {
+                ctx.say(format!("Failed to load track: {}", error.message)).await?;
+            } else {
+                ctx.say("Failed to load track").await?;
+            }
+        }
+    }
+
+    Ok(())
+}
+
+/// Show the current queue
 #[poise::command(slash_command, prefix_command)]
 pub async fn queue(ctx: Context<'_>) -> Result<(), Error> {
-    let guild_id = ctx.data().guild_id;  // Access the hardcoded guild_id from Data
+    let guild_id = ctx.guild_id().ok_or("This command can only be used in a guild")?;
 
     let lava_client = ctx.data().lavalink.clone();
 
-    let Some(player) = lava_client.get_player_context(lavalink_rs::model::GuildId(guild_id)) else {
+    let Some(player) = lava_client.get_player_context(GuildId(guild_id.into())) else {
         ctx.say("Join the bot to a voice channel first.").await?;
         return Ok(());
     };
@@ -82,11 +196,11 @@ pub async fn queue(ctx: Context<'_>) -> Result<(), Error> {
 /// Skip the current song.
 #[poise::command(slash_command, prefix_command)]
 pub async fn skip(ctx: Context<'_>) -> Result<(), Error> {
-    let guild_id = ctx.data().guild_id;
+    let guild_id = ctx.guild_id().ok_or("This command can only be used in a guild")?;
 
     let lava_client = ctx.data().lavalink.clone();
 
-    let Some(player) = lava_client.get_player_context(guild_id) else {
+    let Some(player) = lava_client.get_player_context(GuildId(guild_id.into())) else {
         ctx.say("Join the bot to a voice channel first.").await?;
         return Ok(());
     };
@@ -106,11 +220,11 @@ pub async fn skip(ctx: Context<'_>) -> Result<(), Error> {
 /// Pause the current song.
 #[poise::command(slash_command, prefix_command)]
 pub async fn pause(ctx: Context<'_>) -> Result<(), Error> {
-    let guild_id = ctx.data().guild_id;
+    let guild_id = ctx.guild_id().ok_or("This command can only be used in a guild")?;
 
     let lava_client = ctx.data().lavalink.clone();
 
-    let Some(player) = lava_client.get_player_context(guild_id) else {
+    let Some(player) = lava_client.get_player_context(GuildId(guild_id.into())) else {
         ctx.say("Join the bot to a voice channel first.").await?;
         return Ok(());
     };
@@ -125,11 +239,11 @@ pub async fn pause(ctx: Context<'_>) -> Result<(), Error> {
 /// Resume playing the current song.
 #[poise::command(slash_command, prefix_command)]
 pub async fn resume(ctx: Context<'_>) -> Result<(), Error> {
-    let guild_id = ctx.data().guild_id;
+    let guild_id = ctx.guild_id().ok_or("This command can only be used in a guild")?;
 
     let lava_client = ctx.data().lavalink.clone();
 
-    let Some(player) = lava_client.get_player_context(guild_id) else {
+    let Some(player) = lava_client.get_player_context(GuildId(guild_id.into())) else {
         ctx.say("Join the bot to a voice channel first.").await?;
         return Ok(());
     };
@@ -144,11 +258,11 @@ pub async fn resume(ctx: Context<'_>) -> Result<(), Error> {
 /// Stops the playback of the current song.
 #[poise::command(slash_command, prefix_command)]
 pub async fn stop(ctx: Context<'_>) -> Result<(), Error> {
-    let guild_id = ctx.data().guild_id;
+    let guild_id = ctx.guild_id().ok_or("This command can only be used in a guild")?;
 
     let lava_client = ctx.data().lavalink.clone();
 
-    let Some(player) = lava_client.get_player_context(guild_id) else {
+    let Some(player) = lava_client.get_player_context(GuildId(guild_id.into())) else {
         ctx.say("Join the bot to a voice channel first.").await?;
         return Ok(());
     };
@@ -171,11 +285,11 @@ pub async fn seek(
     ctx: Context<'_>,
     #[description = "Time to jump to (in seconds)"] time: u64,
 ) -> Result<(), Error> {
-    let guild_id = ctx.data().guild_id;
+    let guild_id = ctx.guild_id().ok_or("This command can only be used in a guild")?;
 
     let lava_client = ctx.data().lavalink.clone();
 
-    let Some(player) = lava_client.get_player_context(guild_id) else {
+    let Some(player) = lava_client.get_player_context(GuildId(guild_id.into())) else {
         ctx.say("Join the bot to a voice channel first.").await?;
         return Ok(());
     };
@@ -198,11 +312,11 @@ pub async fn remove(
     ctx: Context<'_>,
     #[description = "Queue item index to remove"] index: usize,
 ) -> Result<(), Error> {
-    let guild_id = ctx.data().guild_id;
+    let guild_id = ctx.guild_id().ok_or("This command can only be used in a guild")?;
 
     let lava_client = ctx.data().lavalink.clone();
 
-    let Some(player) = lava_client.get_player_context(guild_id) else {
+    let Some(player) = lava_client.get_player_context(GuildId(guild_id.into())) else {
         ctx.say("Join the bot to a voice channel first.").await?;
         return Ok(());
     };
@@ -217,11 +331,11 @@ pub async fn remove(
 /// Clear the current queue.
 #[poise::command(slash_command, prefix_command)]
 pub async fn clear(ctx: Context<'_>) -> Result<(), Error> {
-    let guild_id = ctx.data().guild_id;
+    let guild_id = ctx.guild_id().ok_or("This command can only be used in a guild")?;
 
     let lava_client = ctx.data().lavalink.clone();
 
-    let Some(player) = lava_client.get_player_context(guild_id) else {
+    let Some(player) = lava_client.get_player_context(GuildId(guild_id.into())) else {
         ctx.say("Join the bot to a voice channel first.").await?;
         return Ok(());
     };
@@ -240,11 +354,11 @@ pub async fn swap(
     #[description = "Queue item index to swap"] index1: usize,
     #[description = "The other queue item index to swap"] index2: usize,
 ) -> Result<(), Error> {
-    let guild_id = ctx.data().guild_id;
+    let guild_id = ctx.guild_id().ok_or("This command can only be used in a guild")?;
 
     let lava_client = ctx.data().lavalink.clone();
 
-    let Some(player) = lava_client.get_player_context(guild_id) else {
+    let Some(player) = lava_client.get_player_context(GuildId(guild_id.into())) else {
         ctx.say("Join the bot to a voice channel first.").await?;
         return Ok(());
     };
