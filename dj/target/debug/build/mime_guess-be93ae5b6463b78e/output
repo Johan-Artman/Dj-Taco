@@ -1,0 +1,1 @@
+cargo:rustc-env=MIME_TYPES_GENERATED_PATH=/home/runner/work/Dj-Taco/Dj-Taco/dj/target/debug/build/mime_guess-be93ae5b6463b78e/out/mime_types_generated.rs

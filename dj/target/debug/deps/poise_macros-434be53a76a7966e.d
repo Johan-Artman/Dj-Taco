@@ -1,0 +1,11 @@
+/home/runner/work/Dj-Taco/Dj-Taco/dj/target/debug/deps/poise_macros-434be53a76a7966e.d: /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/poise_macros-0.6.1/src/lib.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/poise_macros-0.6.1/src/choice_parameter.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/poise_macros-0.6.1/src/command/mod.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/poise_macros-0.6.1/src/command/prefix.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/poise_macros-0.6.1/src/command/slash.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/poise_macros-0.6.1/src/modal.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/poise_macros-0.6.1/src/util.rs
+
+/home/runner/work/Dj-Taco/Dj-Taco/dj/target/debug/deps/libpoise_macros-434be53a76a7966e.so: /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/poise_macros-0.6.1/src/lib.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/poise_macros-0.6.1/src/choice_parameter.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/poise_macros-0.6.1/src/command/mod.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/poise_macros-0.6.1/src/command/prefix.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/poise_macros-0.6.1/src/command/slash.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/poise_macros-0.6.1/src/modal.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/poise_macros-0.6.1/src/util.rs
+
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/poise_macros-0.6.1/src/lib.rs:
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/poise_macros-0.6.1/src/choice_parameter.rs:
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/poise_macros-0.6.1/src/command/mod.rs:
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/poise_macros-0.6.1/src/command/prefix.rs:
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/poise_macros-0.6.1/src/command/slash.rs:
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/poise_macros-0.6.1/src/modal.rs:
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/poise_macros-0.6.1/src/util.rs:
