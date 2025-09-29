@@ -120,17 +120,9 @@ All commands work with both slash commands (`/play`) and text commands (`,play`)
 
 
 ## Roadmap
-
+- [ ] MAKE YOUTUBE WORK
 - [ ] Multi-server support
 - [ ] Playlist import/export
 - [ ] Loop/repeat modes
 - [ ] Web dashboard for queue management
 - [ ] Audio filters and effects
-
-## Contributing
-
-Found a bug or want to contribute? Open an issue or pull request on [GitHub](https://github.com/Johan-Artman/Dj-Taco)!
-
----
-
-Built with ❤️ in Rust
