@@ -14,145 +14,122 @@ A powerful Discord music bot built in Rust that integrates with Lavalink for hig
 
 ## Prerequisites
 
-Before setting up Dj-Taco, ensure you have the following installed:
-
 - [Rust](https://rustup.rs/) (latest stable version)
-- [Lavalink Server](https://github.com/freyacodes/Lavalink) (for audio streaming)
-- Discord Bot Token (from [Discord Developer Portal](https://discord.com/developers/applications))
+- Java 17+ (for running Lavalink)
+- A Discord Application with Bot Token (create one at [Discord Developer Portal](https://discord.com/developers/applications))
 
 ## Installation
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/Johan-Artman/Dj-Taco.git
-   cd Dj-Taco/dj
-   ```
+### 1. Discord Bot Setup
+1. Go to the [Discord Developer Portal](https://discord.com/developers/applications)
+2. Create a "New Application" and give it a name
+3. Go to the "Bot" section and create a bot
+4. Copy the bot token (you'll need this for configuration)
+5. Under "Privileged Gateway Intents", enable "Message Content Intent"
+6. Go to "OAuth2" → "URL Generator", select "bot" scope and "Connect", "Speak" permissions
+7. Use the generated URL to invite the bot to your Discord server
 
-2. **Build the project:**
-   ```bash
-   cargo build --release
-   ```
+### 2. Install the Bot
+```bash
+git clone https://github.com/Johan-Artman/Dj-Taco.git
+cd Dj-Taco/dj
+cargo build --release
+```
 
 ## Configuration
 
 ### Environment Variables
 
-Create a `.env` file in the `dj/` directory with the following variables:
+Create a `.env` file in the `dj/` directory with your Discord bot credentials:
 
 ```env
 DISCORD_TOKEN=your_discord_bot_token_here
 DISCORD_USER_ID=your_bot_user_id_here
 LAVALINK_HOSTNAME=localhost:2333
-LAVALINK_PASSWORD=your_lavalink_password_here
+LAVALINK_PASSWORD=123
 ```
 
-### Code Configuration
-
-~~Currently, some configuration values need to be set directly in the code (this will be improved in future versions):~~
-
-**✅ FIXED**: All configuration values are now set via environment variables! No more hardcoded values.
-
-~~1. **Lavalink Configuration** (`src/main.rs`, lines 69-73):~~
-~~2. **Guild ID** (`src/main.rs`, line 87):~~
+**Note**: Get your bot user ID by enabling Developer Mode in Discord, right-clicking your bot, and selecting "Copy User ID".
 
 ### Lavalink Setup
 
-1. Download Lavalink from the [official releases](https://github.com/freyacodes/Lavalink/releases)
-2. Create an `application.yml` configuration file:
-   ```yaml
-   server:
-     port: 2333
-     address: 0.0.0.0
-   lavalink:
-     server:
-       password: "youshallnotpass"
-       sources:
-         youtube: true
-         bandcamp: true
-         soundcloud: true
-         twitch: true
-         vimeo: true
-         http: true
-         local: false
-       bufferDurationMs: 400
-       frameBufferDurationMs: 5000
-       youtubePlaylistLoadLimit: 6
-       playerUpdateInterval: 5
-       youtubeSearchEnabled: true
-       soundcloudSearchEnabled: true
-       gc-warnings: true
+1. **Download Lavalink v4+** from [GitHub releases](https://github.com/lavalink-devs/Lavalink/releases)
+2. **Use the provided configuration**: The repository includes a ready-to-use `lavalink/application.yml`
+3. **Run Lavalink**:
+   ```bash
+   cd lavalink
+   java -jar Lavalink.jar
    ```
-3. Run Lavalink: `java -jar Lavalink.jar`
+
+The included configuration supports YouTube (via plugin), SoundCloud, Bandcamp, Twitch, and other sources.
 
 ## Usage
 
 ### Starting the Bot
 
-```bash
-cargo run --release
-```
+1. **Start Lavalink** (in the `lavalink/` directory):
+   ```bash
+   java -jar Lavalink.jar
+   ```
+
+2. **Start the bot** (in the `dj/` directory):
+   ```bash
+   cargo run --release
+   ```
+
+3. **Join a voice channel** in Discord and start using commands!
 
 ### Commands
 
-All commands support both slash commands (`/command`) and prefix commands (`,command`):
+All commands work with both slash commands (`/play`) and text commands (`,play`):
 
-#### Music Commands
-- `,play <URL or search query>` - Play a song from YouTube or other sources
-- `,queue` - Display the current queue (shows up to 9 tracks)
-- `,clear` - Clear the entire queue
-- `,remove <index>` - Remove a specific song from the queue
-- `,swap <index1> <index2>` - Swap two songs in the queue
+**Music Playback:**
+- `,play <query/URL>` - Play music from YouTube, SoundCloud, etc.
+- `,pause` / `,resume` - Control playback
+- `,skip` - Skip current track
+- `,stop` - Stop and disconnect
+- `,seek <seconds>` - Jump to timestamp
 
-#### Playback Controls
-- `,skip` - Skip the current song
-- `,pause` - Pause the current song
-- `,resume` - Resume playback
-- `,stop` - Stop playback completely
-- `,seek <seconds>` - Jump to a specific time in the current song
+**Queue Management:**
+- `,queue` - Show current queue (up to 9 tracks)
+- `,remove <position>` - Remove track at position
+- `,swap <pos1> <pos2>` - Swap two tracks
+- `,clear` - Clear entire queue
 
-### Example Usage
+### Quick Start Examples
 
-```
-,play never gonna give you up  # Play a song by search
-,play https://youtu.be/dQw4w9WgXcQ  # Play a song by URL
-,queue                    # Show current queue
-,skip                     # Skip current song
-,seek 120                 # Jump to 2 minutes into the song
-,remove 3                 # Remove the 3rd song in queue
-,swap 1 5                 # Swap positions of 1st and 5th songs
+```bash
+,play never gonna give you up    # Search and play
+,play https://youtu.be/dQw4w9WgXcQ  # Play from URL
+,queue                           # Show what's playing
+,skip                           # Skip current song
+,seek 90                        # Jump to 1:30
 ```
 
-## Dependencies
+## Technical Details
 
-This project uses the following major Rust crates:
+**Built with:**
+- **Rust** with [poise](https://crates.io/crates/poise) (Discord framework)
+- **[Lavalink](https://github.com/lavalink-devs/Lavalink)** for high-quality audio streaming
+- **[Songbird](https://crates.io/crates/songbird)** for Discord voice integration
 
-- **[poise](https://crates.io/crates/poise)** - Modern Discord bot framework
-- **[songbird](https://crates.io/crates/songbird)** - Voice client for Discord
-- **[lavalink-rs](https://crates.io/crates/lavalink-rs)** - Lavalink client for Rust
-- **[tokio](https://crates.io/crates/tokio)** - Async runtime
-- **[tracing](https://crates.io/crates/tracing)** - Logging and diagnostics
-
-## Architecture
-
-The bot is structured into three main modules:
-
-- `main.rs` - Bot initialization, framework setup, and Lavalink configuration
-- `commands.rs` - All Discord command implementations
-- `music_events.rs` - Event handlers for music playback events
+**Architecture:**
+- `main.rs` - Bot setup and configuration
+- `commands.rs` - All music commands
+- `music_events.rs` - Audio event handling
 
 
-## Future Improvements
+## Roadmap
 
-- [x] ~~Move hardcoded configuration to environment variables~~ ✅ **COMPLETED**
-- [x] ~~Add play command to actually play music~~ ✅ **COMPLETED**
-- [ ] Add support for multiple guilds
-- [ ] Implement playlist support
-- [ ] Implement loop/repeat functionality
-- [ ] Add web dashboard for queue management
+- [ ] Multi-server support
+- [ ] Playlist import/export
+- [ ] Loop/repeat modes
+- [ ] Web dashboard for queue management
+- [ ] Audio filters and effects
 
+## Contributing
 
-
-If you encounter any issues or have questions, please open an issue in the GitHub repository.
+Found a bug or want to contribute? Open an issue or pull request on [GitHub](https://github.com/Johan-Artman/Dj-Taco)!
 
 ---
 
