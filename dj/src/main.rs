@@ -4,11 +4,11 @@ extern crate tracing;
 
 pub mod commands;
 pub mod music_events;
+pub mod spotify;
 
 use lavalink_rs::{model::events::{self}, prelude::*};
 use poise::serenity_prelude as serenity;
 use songbird::SerenityInit;
-
 
 
 
@@ -22,8 +22,8 @@ pub type Context<'a> = poise::Context<'a, Data, Error>;
 
 #[tokio::main]
 async fn main() -> Result<(), Error> {
-    // Load environment variables
-    dotenv::dotenv().ok();
+    // Load environment variables from parent directory
+    dotenv::from_path("../.env").ok();
     std::env::set_var("RUST_LOG", "info,lavalink_rs=trace");
     tracing_subscriber::fmt::init();
 
